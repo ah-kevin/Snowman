@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GameView: View {
     let word = ["S", "N", "O", "W", "M", "A", "N"]
+    let guesses = [ "E", "S", "R", "X"]
+
     var body: some View {
         HStack {
             Image("0")
@@ -34,6 +36,19 @@ struct GameView: View {
                             }
                     }
                 }
+                Button("New Game") {
+                    print("Starting new game ..")
+                }
+                .keyboardShortcut(.defaultAction)
+                
+                // 1
+                HStack {
+                  // 2
+                  Text("Letters used:")
+                  // 3
+                  Text(guesses.joined(separator: ", "))
+                }
+
             }
         }
     }
