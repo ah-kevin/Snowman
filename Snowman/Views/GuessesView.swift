@@ -8,23 +8,37 @@
 import SwiftUI
 
 struct GuessesView: View {
-  let guesses = ["E", "S", "R", "X"]
-  var body: some View {
-    // 1
-    VStack {
-      HStack {
-        // 2
-        Text("Letters used:")
-        // 3
-        Text(guesses.joined(separator: ", "))
-      }
-      LabeledContent("Guess a letter:") {
-        Text("Q")
-      }
+    @State var nextGuess = ""
+    @Binding var game: Game
+    @FocusState var entryFieldHasFocus: Bool
+
+    var body: some View {
+        // 1
+        VStack {
+            HStack {
+                // 2
+                Text("Letters used:")
+                // 3
+                Text(game.guesses.joined(separator: ", "))
+            }
+            LabeledContent("Guess a letter:") {
+                TextField("", text: $nextGuess)
+                    .frame(width: 50)
+                    .textFieldStyle(.roundedBorder)
+                    .disabled(game.gameStatus != .inProgress)
+                    .focused($entryFieldHasFocus)
+                    .onChange(of: game.gameStatus) { _, _ in
+                        entryFieldHasFocus = true
+                    }
+                    .onChange(of: nextGuess) { _, newValue in
+                        game.processGuess(letter: newValue)
+                        nextGuess = ""
+                    }
+            }
+        }
     }
-  }
 }
 
 #Preview {
-  GuessesView()
+    GuessesView(game: .constant(Game()))
 }

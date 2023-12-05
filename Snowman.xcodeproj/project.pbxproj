@@ -12,6 +12,7 @@
 		0A5192AE2B1F0217007D960D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5192AD2B1F0217007D960D /* Game.swift */; };
 		0A5192B12B1F0250007D960D /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5192B02B1F0250007D960D /* GameStatus.swift */; };
 		0A5192B32B1F13C0007D960D /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5192B22B1F13C0007D960D /* Letter.swift */; };
+		0A9492EE2B1F6675007AE1EE /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A9492ED2B1F6675007AE1EE /* words.txt */; };
 		0ABD85692B0F9B94000DE664 /* SnowmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD85682B0F9B94000DE664 /* SnowmanApp.swift */; };
 		0ABD856B2B0F9B94000DE664 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD856A2B0F9B94000DE664 /* ContentView.swift */; };
 		0ABD856D2B0F9B95000DE664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD856C2B0F9B95000DE664 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		0A5192AD2B1F0217007D960D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0A5192B02B1F0250007D960D /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 		0A5192B22B1F13C0007D960D /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		0A9492ED2B1F6675007AE1EE /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		0ABD85652B0F9B94000DE664 /* Snowman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABD85682B0F9B94000DE664 /* SnowmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowmanApp.swift; sourceTree = "<group>"; };
 		0ABD856A2B0F9B94000DE664 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		0A5192AF2B1F0242007D960D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0A9492ED2B1F6675007AE1EE /* words.txt */,
 				0A5192AD2B1F0217007D960D /* Game.swift */,
 				0A5192B02B1F0250007D960D /* GameStatus.swift */,
 				0A5192B22B1F13C0007D960D /* Letter.swift */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ABD85702B0F9B95000DE664 /* Preview Assets.xcassets in Resources */,
+				0A9492EE2B1F6675007AE1EE /* words.txt in Resources */,
 				0ABD856D2B0F9B95000DE664 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
