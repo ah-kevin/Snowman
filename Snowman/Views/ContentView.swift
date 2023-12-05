@@ -14,6 +14,7 @@ struct ContentView: View {
         } detail: {
             GameView()
         }
+        .frame(minWidth: 850,minHeight: 500)
     }
 }
 

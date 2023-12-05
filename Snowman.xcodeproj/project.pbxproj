@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5192AA2B1EFA73007D960D /* LettersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5192A92B1EFA73007D960D /* LettersView.swift */; };
+		0A5192AC2B1EFAF0007D960D /* GuessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5192AB2B1EFAF0007D960D /* GuessesView.swift */; };
 		0ABD85692B0F9B94000DE664 /* SnowmanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD85682B0F9B94000DE664 /* SnowmanApp.swift */; };
 		0ABD856B2B0F9B94000DE664 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ABD856A2B0F9B94000DE664 /* ContentView.swift */; };
 		0ABD856D2B0F9B95000DE664 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ABD856C2B0F9B95000DE664 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A5192A92B1EFA73007D960D /* LettersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersView.swift; sourceTree = "<group>"; };
+		0A5192AB2B1EFAF0007D960D /* GuessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessesView.swift; sourceTree = "<group>"; };
 		0ABD85652B0F9B94000DE664 /* Snowman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snowman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABD85682B0F9B94000DE664 /* SnowmanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowmanApp.swift; sourceTree = "<group>"; };
 		0ABD856A2B0F9B94000DE664 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,7 +82,9 @@
 			children = (
 				0ABD85772B0F9D7F000DE664 /* SidebarView.swift */,
 				0ABD85792B0F9D8B000DE664 /* GameView.swift */,
+				0A5192A92B1EFA73007D960D /* LettersView.swift */,
 				0ABD856A2B0F9B94000DE664 /* ContentView.swift */,
+				0A5192AB2B1EFAF0007D960D /* GuessesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5192AC2B1EFAF0007D960D /* GuessesView.swift in Sources */,
 				0ABD856B2B0F9B94000DE664 /* ContentView.swift in Sources */,
+				0A5192AA2B1EFA73007D960D /* LettersView.swift in Sources */,
 				0ABD85692B0F9B94000DE664 /* SnowmanApp.swift in Sources */,
 				0ABD857A2B0F9D8B000DE664 /* GameView.swift in Sources */,
 				0ABD85782B0F9D7F000DE664 /* SidebarView.swift in Sources */,
