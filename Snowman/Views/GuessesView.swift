@@ -27,12 +27,15 @@ struct GuessesView: View {
                     .textFieldStyle(.roundedBorder)
                     .disabled(game.gameStatus != .inProgress)
                     .focused($entryFieldHasFocus)
-                    .onChange(of: game.gameStatus) { _, _ in
+                    .onChange(of: game.id) { _, _ in
                         entryFieldHasFocus = true
                     }
                     .onChange(of: nextGuess) { _, newValue in
                         game.processGuess(letter: newValue)
                         nextGuess = ""
+                    }
+                    .onAppear{
+                      entryFieldHasFocus = true
                     }
             }
         }

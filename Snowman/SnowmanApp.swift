@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct SnowmanApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject var appState = AppState()
+  var body: some Scene {
+    WindowGroup {
+      ContentView(appState: appState)
     }
+  }
 }

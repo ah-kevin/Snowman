@@ -35,6 +35,13 @@ struct Game: Identifiable {
     return lettersArray
   }
 
+  var siderbarWord: String {
+    if gameStatus == .inProgress {
+      return "???"
+    }
+    return word
+  }
+
   init(id: Int) {
     self.id = id
     word = getRandomWord()
