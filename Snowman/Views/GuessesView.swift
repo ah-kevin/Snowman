@@ -40,5 +40,5 @@ struct GuessesView: View {
 }
 
 #Preview {
-    GuessesView(game: .constant(Game()))
+    GuessesView(game: .constant(Game(id: 1)))
 }

@@ -30,5 +30,5 @@ struct LettersView: View {
 }
 
 #Preview {
-    LettersView(letters: Game().letters)
+    LettersView(letters: Game(id: 1).letters)
 }

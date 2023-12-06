@@ -12,7 +12,7 @@ class AppState: ObservableObject {
     @Published var gameIndex: Int
     @Published var selectedID: Int?
     init() {
-        let newGame = Game()
+        let newGame = Game(id: 1)
         games = [newGame]
 
         gameIndex = 0

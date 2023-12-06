@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct GameView: View {
-    @State var game = Game()
+    @State var game = Game(id: 1)
     var body: some View {
         HStack {
             Image("\(game.incorrectGuessCount)")
@@ -25,7 +25,7 @@ struct GameView: View {
                 Spacer()
                 if game.gameStatus != .inProgress {
                     Button("New Game") {
-                        game = Game()
+                        game = Game(id: 1)
                     }
                     .keyboardShortcut(.defaultAction)
                     .opacity(game.gameStatus == .inProgress ?0 : 1)
