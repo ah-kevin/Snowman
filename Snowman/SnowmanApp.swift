@@ -14,5 +14,8 @@ struct SnowmanApp: App {
     WindowGroup {
       ContentView(appState: appState)
     }
+    Settings {
+      SettingsView()
+    }
   }
 }
